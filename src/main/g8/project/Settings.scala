@@ -54,7 +54,7 @@ object Settings {
 
   lazy val $appname$Settings = Seq(
     assemblyJarName in assembly := "$appname$-" + version.value + ".jar",
-    mainClass in assembly := Some("$package$.$library;format="word"$.$appname;format="Camel"$"),
+    mainClass in assembly := Some("$package$.$appname;format="word"$.$appname;format="Camel"$"),
     target in assembly := file(baseDirectory.value + "/../bin/"),
     assemblyOption in assembly := (assemblyOption in assembly).value.copy(
       includeScala = false, includeDependency = false
