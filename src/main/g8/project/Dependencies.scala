@@ -13,7 +13,7 @@ object Dependencies {
       val check = "org.scalacheck" %% "scalacheck" % version.scalaCheck % Test
   }
 
-  val $library$Dependencies: Seq[ModuleID] = Seq(
+  val $appname$Dependencies: Seq[ModuleID] = Seq(
     libs.test,
     libs.check
   )
