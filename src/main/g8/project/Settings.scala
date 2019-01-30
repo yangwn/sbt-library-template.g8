@@ -38,8 +38,7 @@ object Settings {
       Classpaths.typesafeReleases,
       "Typesafe repository" at "http://repo.typesafe.com/typesafe/releases/",
       "Java.net Maven2 Repository" at "http://download.java.net/maven/2/",
-      Classpaths.sbtPluginReleases,
-      "Eclipse repositories" at "https://repo.eclipse.org/service/local/repositories/egit-releases/content/"
+      Classpaths.sbtPluginReleases
     )
   )
 
