@@ -15,14 +15,15 @@ organization=com.example
 package=com.example.project
 library=mylib
 version=0.0.1
-scala_version=2.12.0
-~~~ 
+scala_version=2.11.0
+~~~
 
-## Usage 
+## Usage
 
 ```sbt new yangwn/sbt-library-template.g8```
 ```sbt compile``` and ```sbt publish-local``` will compile and then publish to the local repository as expected.
-```sbt assmebly``` will create a 'bin' directory within the project folder and write the 'uber-jar' to that location.
+```sbt assembly``` will create a 'bin' directory within the project folder and write the '$appname-jar' to that location.
+```sbt assemblyPackageDependency``` will create a 'bin' directory within the project folder and write the dependencies 'jar' to that location. '$appname$-depn-jar'
 
 ## Directory Layout
 
