@@ -20,8 +20,7 @@ scala_version=2.12.0
 
 ## Usage 
 
-```sbt new lewismj/sbt-library-template.g8```
-
+```sbt new yangwn/sbt-library-template.g8```
 ```sbt compile``` and ```sbt publish-local``` will compile and then publish to the local repository as expected.
 ```sbt assmebly``` will create a 'bin' directory within the project folder and write the 'uber-jar' to that location.
 
@@ -43,7 +42,3 @@ scala_version=2.12.0
 |    +-- build.properties
 |    +-- plugins.sbt
 ~~~
-
-
-[1]: https://github.com/n8han/giter8
-
