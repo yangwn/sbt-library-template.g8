@@ -4,7 +4,6 @@ import $package$.$appname;format="word"$.config.Settings
 import $package$.$appname;format="word"$.handler.ReadDataFromExternal
 import org.apache.spark.sql.SparkSession
 
-
 /**
   * Spark2 普通性任务
   *
@@ -24,7 +23,7 @@ object $appname;format="Camel"$ extends App{
   val filePath = args(0)
   val countLines = ReadDataFromExternal(filePath)(spark)
 
-  println(s"CountLines with a: $countLines")
+  println(s"CountLines with a: \$countLines")
   spark.stop()
 
 }
