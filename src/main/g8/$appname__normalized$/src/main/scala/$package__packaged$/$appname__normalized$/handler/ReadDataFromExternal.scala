@@ -5,7 +5,7 @@ import org.apache.spark.sql.SparkSession
 
 class ReadDataFromExternal(file: String)(@transient spark: SparkSession) {
 
-  def countFileLine(): Int = {
+  def countFileLine(): Long = {
     spark.read.textFile(file).rdd.count()
   }
 
