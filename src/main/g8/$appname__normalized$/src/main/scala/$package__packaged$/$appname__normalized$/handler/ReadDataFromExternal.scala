@@ -13,5 +13,5 @@ class ReadDataFromExternal(file: String)(@transient spark: SparkSession) {
 
 
 object ReadDataFromExternal {
-  def apply(file: String)(@transient spark: SparkSession) = new ReadDataFromExternal(file)(sparkSession)
+  def apply(file: String)(@transient spark: SparkSession) = new ReadDataFromExternal(file)(spark)
 }
