@@ -18,12 +18,12 @@ object $appname;format="Camel"$ extends App{
 
   val appName = Settings.getProgName // 设置任务名
   val master = Settings.getSparkParams()("sparkMaster") //设置sparkMaster
-  val spark = SparkSession.builder.appName(appName).master(master).getOrCreate()
+  val sparkSession = SparkSession.builder.appName(appName).master(master).getOrCreate()
 
   val file = args(0)
-  val countLines = ReadDataFromExternal(file)(spark)
+  val countLines = ReadDataFromExternal(file)(sparkSession)
 
   println(s"CountLines with a: \$countLines")
-  spark.stop()
+  sparkSession.stop()
 
 }
